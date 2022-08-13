@@ -75,7 +75,6 @@ main {
     background: url(https://fondosmil.com/fondo/30426.jpg);
     background-position: center;
     background-size: 130%;
-
 }
 
 .box-imgRotativa img {
@@ -202,7 +201,6 @@ main {
     object-fit: cover;
     border-radius: 100%;
 }
-
 
 /* SECCION MEDIO - PRODUCTOS */
 
@@ -382,7 +380,6 @@ main {
     object-fit: cover;
 }
 
-
 /* FOOTER */
 
 footer {
@@ -446,8 +443,6 @@ footer {
     padding: 20px;
 }
 
-
-
 /* DESKTOP */
 
 @media screen and (min-width: 1200px) {
@@ -467,7 +462,6 @@ footer {
         align-items: center;
         position: sticky;
         top: 0px;
-        /* background-color: #464852; */
         width: 100vw;
         height: 115px;
     }
@@ -512,7 +506,6 @@ footer {
         height: 100%;
         object-fit: cover;
         border-radius: 20px;
-
     }
 
     /* SECCION INICIO - INDEX*/
@@ -620,14 +613,11 @@ footer {
         background-color: #fcfafa;
         width: 100%;
         height: 100%;
-        transition: all 0.5s;
+        transition: all 0.3s;
     }
 
     .box-productos__boxImg:hover {
-        transform: scale(1.05, 1.05);
-        /* height:300px;
-        width: 300px; */
-        /* padding: 200px; */
+        transform: scale(1.05);
     }
 
     .box-productos__boxImg img {
