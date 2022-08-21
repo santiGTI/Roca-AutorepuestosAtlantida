@@ -5,98 +5,105 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- CSS Propio -->
     <link rel="stylesheet" href="./styles/styles.css">
+    <!-- Fuente de Letra -->
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400&display=swap" rel="stylesheet">
+
     <title>Autorepuestos Atlántida / Inicio</title>
 </head>
 
 <body>
     <!-- HEADER -->
     <header class="header">
-        <div class="header__boxLogo">
-            <img src="./Imagenes/logo-principal.png" alt="Logo principal">
-        </div>
-        <nav class="header__nav">
-            <ul>
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./paginas/productos.html">Productos</a></li>
-                <li><a href="./paginas/galeria.html">Galeria</a></li>
-                <li><a href="./paginas/marcas.html">Marcas</a></li>
-                <li><a href="./paginas/contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+        <section class="container-fluid text-center p-0 seccion__header">
+            <div class="row m-0">
+
+                <div class="col-12 col-md-9 mx-auto">
+                    <nav class="navbar navbar-expand-lg text-center navbar-dark">
+
+                        <div class="container header__navContainer px-lg-2 mx-lg-3">
+
+                            <div class="header__boxLogo ms-lg-4 me-lg-5 ms-2">
+                                <img src="./Imagenes/logo-principal.png" alt="">
+                            </div>
+
+
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item mx-2">
+                                        <a href="./index.html">Inicio</a>
+                                    </li>
+                                    <li class="nav-item mx-2 ">
+                                        <a href="./paginas/productos.html">Productos</a>
+                                    </li>
+                                    <li class="nav-item mx-2">
+                                        <a href="./paginas/galeria.html">Galeria</a>
+                                    </li>
+                                    <li class="nav-item mx-2">
+                                        <a href="./paginas/marcas.html">Marcas</a>
+                                    </li>
+                                    <li class="nav-item mx-2">
+                                        <a href="./paginas/contacto.html">Contacto</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </section>
     </header>
 
     <!-- MAIN  -->
     <main>
-        <div class="box-imgRotativa"></div>
-
-        <!-- SECCION INICIO -->
-
-        <section class="seccion-inicio">
-            <div class="box-telefono">
-                <div class="box-logoTelefono">
-                    <img src="./Imagenes/telefono-logo.png" alt="logo telefono">
+        <div class="box-imgRotativa mt-md-3">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://fondosmil.com/fondo/30426.jpg" class="d-block" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://drexmin.es/wp-content/uploads/2020/11/alex-suprun-AHnhdjyTNGM-unsplash-1080x675.jpg"
+                            class="d-block" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://fondosmil.com/fondo/30444.jpg" class="d-block" alt="...">
+                    </div>
                 </div>
-                <p>4226 45 45</p>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-            <div class="box-whatsapp">
-                <div class="box-logoWhatsapp">
-                    <a href="#">
-                        <img src="./Imagenes/whatsapp-logo.png" alt="logo whatsapp">
-                    </a>
-                </div>
-                <p>ESCRIBIR AHORA</p>
-            </div>
-            <div class="box-ubicacion">
-                <div class="box-logoUbicacion">
-                    <img src="./Imagenes/ubicacion-logo.png" alt="logo ubicacion">
-                </div>
-                <p>URUGUAY</p>
-            </div>
-        </section>
+        </div>
 
         <!-- SECCION MEDIO  -->
+        <section class="seccion-medio mt-md-3 text-center">
 
-        <section class="seccion-medio">
+            <!-- INTRO -->
             <h1>Atlántida Repuestos</h1>
-            <div class="box-inicio">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla est amet nam dicta, quaerat, a
-                    laboriosam ducimus nemo eum natus repellendus quas velit quia ipsa non obcaecati asperiores
-                    autem debitis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum pariatur in tempore
-                    velit, veritatis eligendi tempora labore! Doloribus, eius autem officiis quam libero illum
-                    molestias, aliquid earum laboriosam, iusto fugit. Lorem ipsum, dolor sit amet consectetur
-                    adipisicing elit. Magni explicabo doloribus inventore at, ratione molestiae doloremque qui
-                    dolores expedita repellat eius nostrum. Sed deleniti accusamus assumenda unde, ab ad aperiam.
-                </p>
-
-                <div class="box-inicio__boxImg">
-                    <img src="./Imagenes/seccion-medio.jpeg" alt="imagen comercio">
-                </div>
-            </div>
-
-            <div class="box-medio">
-                <div class="box-medio__boxImg">
-                    <img src="./Imagenes/mision.jpg" alt="imagen misión">
-                </div>
-                <div class="box-medio__boxTexto">
-                    <h3>Misión</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit ipsum alias obcaecati commodi
-                        rerum iusto quo magni dolorem, in delectus cum perferendis, rem labore quasi! Iusto perspiciatis
-                        officia aspernatur quis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
-                        vero deserunt, magnam voluptatem est recusandae ipsum impedit tempora facilis optio nam!
-                        Perspiciatis quam illum nemo, alias sequi dolorum nulla eum? Lorem ipsum dolor sit amet
-                        consectetur, adipisicing elit. Necessitatibus quia quasi molestias dolor ipsa reiciendis,
-                        incidunt omnis doloribus ut neque eaque tempore aut. Molestiae deserunt, quo et facere delectus
-                        error?
-                    </p>
-                </div>
-            </div>
-
-            <div class="box-final">
-                <div class="box-final__boxTexto">
-                    <h3>Visión</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla est amet nam dicta, quaerat, a
+            <div class="row mx-0">
+                <div class="col-md-8 ps-md-5 pe-md-0 pt-md-4 col-12 px-4">
+                    <p class="px-2 px-md-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla est amet nam
+                        dicta,
+                        quaerat, a
                         laboriosam ducimus nemo eum natus repellendus quas velit quia ipsa non obcaecati asperiores
                         autem debitis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum pariatur in tempore
                         velit, veritatis eligendi tempora labore! Doloribus, eius autem officiis quam libero illum
@@ -105,59 +112,113 @@
                         dolores expedita repellat eius nostrum. Sed deleniti accusamus assumenda unde, ab ad aperiam.
                     </p>
                 </div>
-                <div class="box-final__boxImg">
-                    <img src="./Imagenes/vision.jpg" alt="imagen visión">
+                <div class="col-md-4 pe-md-4 col-12 py-2 py-md-0">
+                    <div class="box-inicio__boxImg mx-auto">
+                        <img src="./Imagenes/seccion-medio.jpeg" alt="imagen comercio">
+                    </div>
+                </div>
+            </div>
+
+            <!-- MISION -->
+            <div class="row mx-0 mb-md-4">
+                <div class="col-md-4 ps-md-4 col-12">
+                    <div class="box-medio__boxImg mt-4 mx-auto">
+                        <img src="./Imagenes/mision.jpg" alt="imagen misión">
+                    </div>
+                </div>
+
+                <div class="col-md-8 pe-md-5 ps-md-0 pt-md-4 col-12 px-4 mt-4 mt-md-0">
+                    <h3 class="mt-3 mt-md-0">Misión</h3>
+                    <p class="px-2 px-md-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla est amet nam
+                        dicta,
+                        quaerat, a
+                        laboriosam ducimus nemo eum natus repellendus quas velit quia ipsa non obcaecati asperiores
+                        autem debitis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum pariatur in tempore
+                        velit, veritatis eligendi tempora labore! Doloribus, eius autem officiis quam libero illum
+                        molestias, aliquid earum laboriosam, iusto fugit. Lorem ipsum, dolor sit amet consectetur
+                        adipisicing elit. Magni explicabo doloribus inventore at, ratione molestiae doloremque qui
+                        dolores expedita repellat eius nostrum. Sed deleniti accusamus assumenda unde, ab ad aperiam.
+                    </p>
+                </div>
+            </div>
+
+            <!-- VISION -->
+            <div class="row mx-0 mt-md-5 pb-md-4 mt-1 mt-md-0">
+                <div class="col-md-8 ps-md-5 pe-md-0 col-12 px-4 ">
+                    <h3>Visión</h3>
+                    <p class="px-2 px-md-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla est amet nam
+                        dicta,quaerat,laboriosam ducimus nemo eum natus repellendus quas velit quia ipsa non obcaecati
+                        asperiores
+                        autem debitis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum pariatur in tempore
+                        velit, veritatis eligendi tempora labore! Doloribus, eius autem officiis quam libero illum
+                        molestias, aliquid earum laboriosam, iusto fugit. Lorem ipsum, dolor sit amet consectetur
+                        adipisicing elit. Magni explicabo doloribus inventore at, ratione molestiae doloremque qui
+                        dolores expedita repellat eius nostrum. Sed deleniti accusamus assumenda unde, ab ad aperiam.
+                    </p>
+                </div>
+                <div class="col-md-4 pe-md-4 col-12 mt-2 mt-md-0">
+                    <div class="box-final__boxImg mx-auto mb-4">
+                        <img src="./Imagenes/vision.jpg" alt="imagen comercio">
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 
     <!-- FOOTER -->
-
     <footer>
-        <section class="seccion-footer">
-            <div class="seccion-footer__ubicacion">
+        <section class="row mx-auto text-center seccion-footer mt-md-3">
+            <!-- UBICACION -->
+            <div class="col-md-4 col-12 my-4 mt-md-2 mb-md-0">
                 <h5>Ubicación</h5>
                 <p>Ruta 11 esq. Pedro Varela</p>
                 <p>Rambla Sur Atlántida</p>
                 <p>Uruguay</p>
             </div>
 
-
-            <div class="seccion-footer__contacto">
+            <!-- CONTACTO -->
+            <div class="col-md-4 col-12 mb-4 mb-md-0 mt-2">
                 <h5>Contacto</h5>
                 <p>Hablar con un vendedor ahora</p>
-                <div class="seccion-footer__contacto__boxImg">
+                <div class="footer-whatsapp mx-auto mt-1">
                     <a href="#">
                         <img src="./Imagenes/whatsapp-logo.png" alt="logo whatsapp">
                     </a>
                 </div>
             </div>
 
-
-            <div class="seccion-footer__redes">
+            <!-- REDES -->
+            <div class="col-md-4 col-12 mt-2">
                 <h5>Seguinos</h5>
-                <div class="box-redes">
-                    <div class="box-redes__twitter">
+                <div class="row mx-auto box-redes mt-3">
+                    <div class="col-4 box-twitter">
                         <a href="#">
                             <img src="./Imagenes/twitter-logo.png" alt="logo twitter">
                         </a>
                     </div>
-                    <div class="box-redes__instagram">
+                    <div class="col-4 box-instagram">
                         <a href="#">
                             <img src="./Imagenes/instagram-logo.png" alt="logo instagram">
                         </a>
                     </div>
-                    <div class="box-redes__facebook">
+                    <div class="col-4 box-facebook">
                         <a href="#">
                             <img src="./Imagenes/facebook-logo.png" alt="logo facebook">
                         </a>
                     </div>
                 </div>
             </div>
+            <!-- END -->
+            <div class="col-12 py-3 mt-2">
+                <small class="footer-small">Todos los derechos reservados&copy;</small>
+            </div>
         </section>
-        <small class="footer-small">Todos los derechos reservados&copy;</small>
     </footer>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
 
 </body>
 
