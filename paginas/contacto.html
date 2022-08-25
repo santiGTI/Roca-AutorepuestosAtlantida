@@ -61,22 +61,20 @@
 
     <!-- MAIN -->
     <main>
-        <section class="seccion-medio text-center mt-md-3">
+        <section class="container seccion-medio text-center mt-md-3 gx-0">
             <h1>Contáctanos</h1>
 
-            <div class="row mx-auto fila">
+            <div class="row mx-auto fila-contacto">
 
                 <!-- Formulario contacto -->
                 <div class="col-md-6 col-12">
-
-                    <div class="row mx-auto">
-
+                    <div class="row mx-auto form-contacto">
                         <div class="col-12">
                             <p>Los campos marcados con * son obligatorios.</p>
                         </div>
 
                         <div class="col-12">
-                            <form class="row">
+                            <form class="row gy-2">
                                 <div class="col-6">
                                     <input type="text" placeholder="*Nombre" class="input-nombre" required />
                                 </div>
@@ -89,7 +87,7 @@
                                     <input type="text" required placeholder="*Asunto" class="input-asunto" />
                                 </div>
 
-                                <div class="col-12">
+                                <div class="col-12 pt-2">
                                     <textarea class="input-textArea" required rows="10" cols="50"
                                         placeholder="*Ingrese su mensaje"></textarea>
                                 </div>
@@ -104,9 +102,9 @@
                 </div>
 
                 <!-- Datos del Local -->
-                <div class="col-md-6 col-12 mt-md-0 mt-4">
-                    <div class="row local">
-                        <div class="col-12 mx-auto">
+                <div class="col-md-6 col-12 mt-md-0  mt-4 pt-md-0 pt-2 ">
+                    <div class="row gy-3 local text-center">
+                        <div class="col-12">
                             <h3>Nuestro Local</h3>
                             <p><strong>Dirección:</strong> Ruta 11 esq. Pedro Varela</p>
                             <p><strong>Teléfono:</strong> 2400 11 11</p>
@@ -114,24 +112,14 @@
                         </div>
                         <div class="col-12">
                             <h3>Horarios</h3>
-                            <p>
                             <p><strong>Lunes a Viernes:</strong> 8.30 - 17.30 hs</p>
                             <p>
                             <p><strong>Sábados:</strong> 8.30 - 12.30 hs</p>
                         </div>
-
-                    </div>
-
-                    <div class="datos-box">
-                        <div class="datos-box__local">
-
-                        </div>
-                        <div class="datos-box__horarios">
-
-                        </div>
                     </div>
                 </div>
-
+            </div>
+            <div class="row fila-contacto mx-auto mt-md-3">
                 <!-- Mapa -->
                 <div class="col-12 pb-4 pt-3">
                     <iframe
@@ -139,7 +127,6 @@
                         style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-
             </div>
 
         </section>
@@ -147,50 +134,52 @@
 
     <!-- FOOTER -->
     <footer>
-        <section class="row mx-auto text-center seccion-footer mt-md-3">
-            <!-- UBICACION -->
-            <div class="col-md-4 col-12 my-4 mt-md-2 mb-md-0">
-                <h5>Ubicación</h5>
-                <p>Ruta 11 esq. Pedro Varela</p>
-                <p>Rambla Sur Atlántida</p>
-                <p>Uruguay</p>
-            </div>
-
-            <!-- CONTACTO -->
-            <div class="col-md-4 col-12 mb-4 mb-md-0 mt-2">
-                <h5>Contacto</h5>
-                <p>Hablar con un vendedor ahora</p>
-                <div class="footer-whatsapp mx-auto mt-1">
-                    <a href="#">
-                        <img src="../Imagenes/whatsapp-logo.png" alt="logo whatsapp">
-                    </a>
+        <section class="container-fluid gx-0">
+            <div class="row mx-auto text-center seccion-footer mt-md-3">
+                <!-- UBICACION -->
+                <div class="col-md-4 col-12 my-4 mt-md-2 mb-md-0">
+                    <h5>Ubicación</h5>
+                    <p>Ruta 11 esq. Pedro Varela</p>
+                    <p>Rambla Sur Atlántida</p>
+                    <p>Uruguay</p>
                 </div>
-            </div>
 
-            <!-- REDES -->
-            <div class="col-md-4 col-12 mt-2">
-                <h5>Seguinos</h5>
-                <div class="row mx-auto box-redes mt-3">
-                    <div class="col-4 box-twitter">
+                <!-- CONTACTO -->
+                <div class="col-md-4 col-12 mb-4 mb-md-0 mt-2">
+                    <h5>Contacto</h5>
+                    <p>Hablar con un vendedor ahora</p>
+                    <div class="footer-whatsapp mx-auto mt-1">
                         <a href="#">
-                            <img src="../Imagenes/twitter-logo.png" alt="logo twitter">
-                        </a>
-                    </div>
-                    <div class="col-4 box-instagram">
-                        <a href="#">
-                            <img src="../Imagenes/instagram-logo.png" alt="logo instagram">
-                        </a>
-                    </div>
-                    <div class="col-4 box-facebook">
-                        <a href="#">
-                            <img src="../Imagenes/facebook-logo.png" alt="logo facebook">
+                            <img src="../Imagenes/whatsapp-logo.png" alt="logo whatsapp">
                         </a>
                     </div>
                 </div>
-            </div>
-            <!-- END -->
-            <div class="col-12 py-3 mt-2">
-                <small class="footer-small">Todos los derechos reservados&copy;</small>
+
+                <!-- REDES -->
+                <div class="col-md-4 col-12 mt-2">
+                    <h5>Seguinos</h5>
+                    <div class="row mx-auto box-redes mt-3">
+                        <div class="col-4 box-twitter">
+                            <a href="#">
+                                <img src="../Imagenes/twitter-logo.png" alt="logo twitter">
+                            </a>
+                        </div>
+                        <div class="col-4 box-instagram">
+                            <a href="#">
+                                <img src="../Imagenes/instagram-logo.png" alt="logo instagram">
+                            </a>
+                        </div>
+                        <div class="col-4 box-facebook">
+                            <a href="#">
+                                <img src="../Imagenes/facebook-logo.png" alt="logo facebook">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- END -->
+                <div class="col-12 py-3 mt-2">
+                    <small class="footer-small">Todos los derechos reservados&copy;</small>
+                </div>
             </div>
         </section>
     </footer>
@@ -199,7 +188,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
         crossorigin="anonymous"></script>
-
 
 </body>
 
