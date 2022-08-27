@@ -2,17 +2,16 @@
 
 .seccion-medio {
     background-color: #ffffff;
-}
 
-.seccion-medio h1 {
-    font-size: 35px;
-    font-family: "Jost", sans-serif;
-    padding: 25px 0px 15px 0px;
-    margin: 5px;
-}
-
-.seccion-medio p {
-    text-align: justify;
+    h1 {
+        font-size: 35px;
+        font-family: "Jost", sans-serif;
+        padding: 25px 0px 15px 0px;
+        margin: 5px;
+    }
+    p {
+        text-align: justify;
+    }
 }
 
 .fila {
@@ -23,18 +22,18 @@
 .box-img {
     width: 280px;
     height: 280px;
-}
 
-.box-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 100%;
-    transition: transform 1s;
-}
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 100%;
+        transition: transform 1s;
 
-.box-img img:hover {
-    transform: scale(1.05, 1.05);
+        &:hover {
+            transform: scale(1.05, 1.05);
+        }
+    }
 }
 
 /* SECCION MEDIO - PRODUCTOS */
@@ -63,7 +62,7 @@
     height: 200px;
 }
 
-/* GALERIA HTML*/
+/* SECCION MEIO - GALERIA*/
 
 .fila iframe {
     height: 250px;
@@ -74,14 +73,14 @@
     height: 200px;
 }
 
-/*MARCAS HTML*/
+/*SECCION MEDIO - MARCAS*/
 
 .box-marcas img {
     height: 220px;
     object-fit: cover;
 }
 
-/* CONTACTO HTML */
+/*SECCION MEDIO - CONTACTO*/
 
 .form-contacto p {
     font-size: 0.8em;
