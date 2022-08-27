@@ -38,7 +38,7 @@ header {
 
 .box-imgRotativa {
     width: 100%;
-    height: 200px;
+    height: 230px;
 }
 
 .box-imgRotativa img {
@@ -61,7 +61,7 @@ header {
 .seccion-medio h1 {
     font-size: 35px;
     font-family: 'Jost', sans-serif;
-    padding: 15px;
+    padding: 25px 0px 15px 0px;
     margin: 5px;
 }
 
@@ -69,16 +69,17 @@ header {
     text-align: justify;
 }
 
-.box-inicio__boxImg,
-.box-medio__boxImg,
-.box-final__boxImg {
+.fila {
+    width: 90%;
+    align-items: center;
+}
+
+.box-img {
     width: 280px;
     height: 280px;
 }
 
-.box-inicio__boxImg img,
-.box-medio__boxImg img,
-.box-final__boxImg img {
+.box-img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -86,22 +87,8 @@ header {
     transition: transform 1s;
 }
 
-.box-inicio__boxImg img:hover,
-.box-medio__boxImg img:hover,
-.box-final__boxImg img:hover {
+.box-img img:hover {
     transform: scale(1.05, 1.05);
-}
-
-.box-telefono,
-.box-whatsapp,
-.box-ubicacion {
-    height: 110px;
-}
-
-.box-whatsapp img,
-.box-ubicacion img,
-.box-telefono img {
-    height: 100%;
 }
 
 /* SECCION MEDIO - PRODUCTOS */
@@ -122,8 +109,8 @@ header {
     transform: scale(1.03, 1.03);
 }
 
-.fila {
-    width: 90%;
+.fila-productos {
+    align-items: stretch;
 }
 
 .alta img {
@@ -144,7 +131,8 @@ header {
 /*MARCAS HTML*/
 
 .box-marcas img {
-    width: 100%;
+    height: 220px;
+    object-fit: cover;
 }
 
 /* CONTACTO HTML */
@@ -212,7 +200,7 @@ header {
     margin-bottom: 15px;
 }
 
-.fila-contacto iframe{
+.fila-contacto iframe {
     height: 250px;
     width: 100%;
 }
@@ -307,7 +295,7 @@ footer {
 
 /* DESKTOP */
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1200px) {
     body {
         background: url(https://fondosmil.com/fondo/13559.jpg);
         background-repeat: no-repeat;
@@ -364,12 +352,9 @@ footer {
         margin-top: 10px;
     }
 
-    .box-inicio__boxImg,
-    .box-medio__boxImg,
-    .box-final__boxImg {
+    .box-img {
         width: 250px;
         height: 250px;
-        margin: 0px auto;
     }
 
     /* FOOTER */
@@ -392,22 +377,24 @@ footer {
         background-color: #fcfafa;
     }
 
-    .box-productos__boxImg {
-        background-color: #fcfafa;
-        width: 100%;
-        height: 100%;
-    }
-
     /* GALERIA HTML */
 
     .box-card img {
         height: 250px;
     }
 
+    .fila iframe {
+        height: 370px;
+    }
+
     /* MARCAS HTML */
 
     .box-marcas {
-        width: 90%;
+        height: 400px;
+    }
+
+    .box-marcas img {
+        height: 100%;
     }
 
     /* CONTACTO HTML */
