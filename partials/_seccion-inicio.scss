@@ -1,0 +1,38 @@
+//SECCION INICIO
+
+// INDEX
+.box-imgRotativa {
+    width: 100%;
+    height: 230px;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.box-imgRotativa div {
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (min-width: 1200px) {
+    //INDEX
+    .box-imgRotativa {
+        width: 100%;
+        height: 350px;
+    }
+
+    .box-imgRotativa img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+
+    .box-imgRotativa div {
+        width: 100%;
+        height: 100%;
+    }
+}

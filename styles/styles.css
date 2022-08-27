@@ -4,36 +4,65 @@
   padding: 0;
 }
 
-/* MOBILE FIRST */
 /* HEADER */
 header {
   background-image: linear-gradient(to bottom, #1a1a1c, #2a2c2e);
 }
+
 header nav li {
   font-family: "Jost", sans-serif;
   -webkit-animation: botones 1.5s ease 4s 1 normal forwards;
-          animation: botones 1.5s ease 4s 1 normal forwards;
+  animation: botones 1.5s ease 4s 1 normal forwards;
 }
+
 header nav li a {
   text-decoration: none;
   color: #fff;
   font-size: 17px;
   padding: 0px 25px;
 }
+
 header nav li a:hover {
   color: #fa2323;
 }
 
-.header__boxLogo img {
+header .header__boxLogo img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   -webkit-animation: logoInicio 3s ease 0s 1 normal forwards;
-          animation: logoInicio 3s ease 0s 1 normal forwards;
+  animation: logoInicio 3s ease 0s 1 normal forwards;
 }
 
-/* MAIN - INDEX */
+@media screen and (min-width: 1200px) {
+  header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+  }
+
+  header nav ul li {
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 15px;
+  }
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1200px) {
+  body {
+    background: url(https://fondosmil.com/fondo/13559.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+  main {
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+}
+
 .box-imgRotativa {
   width: 100%;
   height: 230px;
@@ -43,12 +72,32 @@ header nav li a:hover {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .box-imgRotativa div {
   width: 100%;
   height: 100%;
+}
+
+@media screen and (min-width: 1200px) {
+  .box-imgRotativa {
+    width: 100%;
+    height: 350px;
+  }
+
+  .box-imgRotativa img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+
+  .box-imgRotativa div {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 /*SECCION MEDIO - INDEX*/
@@ -81,7 +130,7 @@ header nav li a:hover {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 100%;
   transition: transform 1s;
 }
@@ -99,7 +148,7 @@ header nav li a:hover {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 20px;
   transition: transform 0.3s;
 }
@@ -130,7 +179,7 @@ header nav li a:hover {
 .box-marcas img {
   height: 220px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 /* CONTACTO HTML */
@@ -138,11 +187,17 @@ header nav li a:hover {
   font-size: 0.8em;
 }
 
-.input-nombre::-moz-placeholder, .input-asunto::-moz-placeholder, .input-correo::-moz-placeholder, .input-textArea::-moz-placeholder {
+.input-nombre::-moz-placeholder,
+.input-asunto::-moz-placeholder,
+.input-correo::-moz-placeholder,
+.input-textArea::-moz-placeholder {
   font-size: 0.8em;
 }
 
-.input-nombre:-ms-input-placeholder, .input-asunto:-ms-input-placeholder, .input-correo:-ms-input-placeholder, .input-textArea:-ms-input-placeholder {
+.input-nombre:-ms-input-placeholder,
+.input-asunto:-ms-input-placeholder,
+.input-correo:-ms-input-placeholder,
+.input-textArea:-ms-input-placeholder {
   font-size: 0.8em;
 }
 
@@ -210,6 +265,182 @@ header nav li a:hover {
   width: 100%;
 }
 
+@media screen and (min-width: 1200px) {
+
+  /*INDEX*/
+  .seccion-medio {
+    background-color: #fcfafa;
+    border-radius: 15px;
+  }
+
+  .seccion-medio h1 {
+    font-size: 45px;
+    margin-top: 10px;
+  }
+
+  .box-img {
+    width: 250px;
+    height: 250px;
+  }
+
+  /* PRODUCTOS*/
+  .alta img {
+    height: 400px;
+  }
+
+  .box-productos {
+    background-color: #fcfafa;
+  }
+
+  /* GALERIA */
+  .box-card img {
+    height: 250px;
+  }
+
+  .fila iframe {
+    height: 370px;
+  }
+
+  /* MARCAS*/
+  .box-marcas {
+    height: 400px;
+  }
+
+  .box-marcas img {
+    height: 100%;
+  }
+
+  /* CONTACTO*/
+  .fila-contacto {
+    width: 90%;
+  }
+
+  .input-nombre,
+  .input-correo,
+  .input-asunto {
+    border: none;
+    border-bottom: 2px solid rgb(168, 56, 56);
+    background-color: #fcfafa;
+  }
+
+  .input-textArea {
+    background-color: #fcfafa;
+    height: 120px;
+  }
+
+  .boton {
+    padding: 6px 10px;
+    background-color: #c3bebe;
+    font-family: "Courier New", Courier, monospace;
+    font-weight: 600;
+    font-size: 13px;
+  }
+
+  .local p {
+    font-size: 0.9em;
+  }
+
+  .fila-contacto iframe {
+    height: 380px;
+  }
+
+  .local {
+    background-image: none;
+  }
+}
+
+/* ANIMACION LOGO */
+@-webkit-keyframes logoInicio {
+  0% {
+    opacity: 0;
+    transform: translateX(-250px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes logoInicio {
+  0% {
+    opacity: 0;
+    transform: translateX(-250px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* ANIMACION BOTONES INICIO */
+@-webkit-keyframes botones {
+  0% {
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    transform: scale(1);
+    transform-origin: center center;
+  }
+
+  10% {
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    transform: scale(0.91);
+  }
+
+  17% {
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    transform: scale(0.98);
+  }
+
+  33% {
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    transform: scale(0.87);
+  }
+
+  45% {
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    transform: scale(1);
+  }
+}
+
+@keyframes botones {
+  0% {
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    transform: scale(1);
+    transform-origin: center center;
+  }
+
+  10% {
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    transform: scale(0.91);
+  }
+
+  17% {
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    transform: scale(0.98);
+  }
+
+  33% {
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    transform: scale(0.87);
+  }
+
+  45% {
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    transform: scale(1);
+  }
+}
+
 /* FOOTER */
 footer {
   background-image: linear-gradient(to bottom, #29292c, #323338);
@@ -255,193 +486,14 @@ footer {
   height: auto;
 }
 
-/* ANIMACION LOGO */
-@-webkit-keyframes logoInicio {
-  0% {
-    opacity: 0;
-    transform: translateX(-250px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-@keyframes logoInicio {
-  0% {
-    opacity: 0;
-    transform: translateX(-250px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-/* ANIMACION BOTONES INICIO */
-@-webkit-keyframes botones {
-  0% {
-    -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
-    transform: scale(1);
-    transform-origin: center center;
-  }
-  10% {
-    -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
-    transform: scale(0.91);
-  }
-  17% {
-    -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
-    transform: scale(0.98);
-  }
-  33% {
-    -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
-    transform: scale(0.87);
-  }
-  45% {
-    -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
-    transform: scale(1);
-  }
-}
-@keyframes botones {
-  0% {
-    -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
-    transform: scale(1);
-    transform-origin: center center;
-  }
-  10% {
-    -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
-    transform: scale(0.91);
-  }
-  17% {
-    -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
-    transform: scale(0.98);
-  }
-  33% {
-    -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
-    transform: scale(0.87);
-  }
-  45% {
-    -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
-    transform: scale(1);
-  }
-}
-/* DESKTOP */
 @media screen and (min-width: 1200px) {
-  body {
-    background: url(https://fondosmil.com/fondo/13559.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-  }
-  /* HEADER */
-  .header {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0px;
-    z-index: 100;
-  }
-  .navbar-nav li {
-    font-family: "Jost", sans-serif;
-    border: 2px solid rgb(255, 255, 255);
-    border-radius: 15px;
-  }
-  /* MAIN -INDEX */
-  main {
-    margin-left: 200px;
-    margin-right: 200px;
-  }
-  .box-imgRotativa {
-    width: 100%;
-    height: 350px;
-  }
-  .box-imgRotativa img {
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-    border-radius: 20px;
-  }
-  .box-imgRotativa div {
-    width: 100%;
-    height: 100%;
-  }
-  /*SECCION MEDIO - INDEX*/
-  .seccion-medio {
-    background-color: #fcfafa;
-    border-radius: 15px;
-  }
-  .seccion-medio h1 {
-    font-size: 45px;
-    margin-top: 10px;
-  }
-  .box-img {
-    width: 250px;
-    height: 250px;
-  }
-  /* FOOTER */
   footer {
     height: auto;
   }
+
   .seccion-footer {
     width: 80%;
   }
-  /* PRODUCTOS HTML */
-  .alta img {
-    height: 400px;
-  }
-  .box-productos {
-    background-color: #fcfafa;
-  }
-  /* GALERIA HTML */
-  .box-card img {
-    height: 250px;
-  }
-  .fila iframe {
-    height: 370px;
-  }
-  /* MARCAS HTML */
-  .box-marcas {
-    height: 400px;
-  }
-  .box-marcas img {
-    height: 100%;
-  }
-  /* CONTACTO HTML */
-  .fila-contacto {
-    width: 90%;
-  }
-  .input-nombre,
-.input-correo,
-.input-asunto {
-    border: none;
-    border-bottom: 2px solid rgb(168, 56, 56);
-    background-color: #fcfafa;
-  }
-  .input-textArea {
-    background-color: #fcfafa;
-    height: 120px;
-  }
-  .boton {
-    padding: 6px 10px;
-    background-color: #c3bebe;
-    font-family: "Courier New", Courier, monospace;
-    font-weight: 600;
-    font-size: 13px;
-  }
-  .local p {
-    font-size: 0.9em;
-  }
-  .fila-contacto iframe {
-    height: 380px;
-  }
-  .local {
-    background-image: none;
-  }
-}/*# sourceMappingURL=styles.css.map */
+}
+
+/*# sourceMappingURL=styles.css.map */

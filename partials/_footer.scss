@@ -1,0 +1,55 @@
+/* FOOTER */
+
+footer {
+    background-image: linear-gradient(to bottom, #29292c, #323338);
+    color: #fff;
+    font-family: "Courier New", Courier, monospace;
+}
+
+.seccion-footer h5 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.seccion-footer p {
+    margin-bottom: 0px;
+}
+
+.footer-whatsapp {
+    width: 60px;
+    height: 60px;
+}
+
+.footer-whatsapp img,
+.box-twitter img,
+.box-instagram img,
+.box-facebook img {
+    height: 100%;
+}
+
+.box-redes {
+    width: 40%;
+}
+
+.box-twitter,
+.box-instagram,
+.box-facebook {
+    height: 30px;
+}
+
+.box-redes__twitter,
+.box-redes__instagram,
+.box-redes__facebook {
+    width: 40%;
+    height: auto;
+}
+
+@media screen and (min-width: 1200px) {
+    footer {
+        height: auto;
+    }
+
+    .seccion-footer {
+        width: 80%;
+    }
+}
