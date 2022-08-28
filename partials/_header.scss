@@ -17,14 +17,12 @@ header {
             }
         }
     }
-
-    .header__boxLogo img {
+    nav img {
         width: 100%;
-        height: 100%;
-        object-fit: cover;
         animation: logoInicio 3s ease 0s 1 normal forwards;
     }
 }
+
 
 @media screen and (min-width: 1200px) {
     header {

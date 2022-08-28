@@ -22,11 +22,8 @@ header nav li a {
 header nav li a:hover {
   color: #fa2323;
 }
-header .header__boxLogo img {
+header nav img {
   width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
   -webkit-animation: logoInicio 3s ease 0s 1 normal forwards;
           animation: logoInicio 3s ease 0s 1 normal forwards;
 }
@@ -378,49 +375,38 @@ footer {
   color: #fff;
   font-family: "Courier New", Courier, monospace;
 }
-
-.seccion-footer h5 {
+footer h5 {
   font-size: 20px;
   font-weight: bold;
 }
-
-.seccion-footer p {
+footer p {
   margin-bottom: 0px;
 }
 
-.footer-whatsapp {
+.box-whatsapp {
   width: 60px;
   height: 60px;
 }
-
-.footer-whatsapp img,
-.box-twitter img,
-.box-instagram img,
-.box-facebook img {
+.box-whatsapp img {
   height: 100%;
 }
 
 .box-redes {
   width: 40%;
 }
-
-.box-twitter,
-.box-instagram,
-.box-facebook {
+.box-redes .box-twitter,
+.box-redes .box-instagram,
+.box-redes .box-facebook {
   height: 30px;
 }
-
-.box-redes__twitter,
-.box-redes__instagram,
-.box-redes__facebook {
-  width: 40%;
-  height: auto;
+.box-redes .box-twitter img,
+.box-redes .box-instagram img,
+.box-redes .box-facebook img {
+  width: 100%;
+  height: 100%;
 }
 
 @media screen and (min-width: 1200px) {
-  footer {
-    height: auto;
-  }
   .seccion-footer {
     width: 80%;
   }
