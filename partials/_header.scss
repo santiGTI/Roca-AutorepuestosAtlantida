@@ -1,6 +1,7 @@
 /* HEADER */
 header {
-    background-image: linear-gradient(to bottom, #1a1a1c, #2a2c2e);
+    background-image: map-get($estilos, colorPrueba);
+    // background-image: linear-gradient(to bottom, #1a1a1c, #2a2c2e);
 
     nav li {
         font-family: "Jost", sans-serif;

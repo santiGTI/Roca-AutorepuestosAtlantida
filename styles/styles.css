@@ -6,7 +6,7 @@
 
 /* HEADER */
 header {
-  background-image: linear-gradient(to bottom, #1a1a1c, #2a2c2e);
+  background-image: red;
 }
 header nav li {
   font-family: "Jost", sans-serif;
@@ -108,7 +108,6 @@ header nav img {
 .box-productos {
   height: 200px;
 }
-
 .box-productos img {
   width: 100%;
   height: 100%;
@@ -117,7 +116,6 @@ header nav img {
   border-radius: 20px;
   transition: transform 0.3s;
 }
-
 .box-productos img:hover {
   transform: scale(1.03, 1.03);
 }
@@ -198,7 +196,6 @@ header nav img {
   border-radius: 10px;
   border: 0;
 }
-
 .boton:hover {
   color: #fff;
   background-color: #464852;
@@ -207,13 +204,11 @@ header nav img {
 .local {
   background-image: radial-gradient(#fff, rgb(229, 229, 229));
 }
-
 .local p {
   text-align: center;
   font-size: 1em;
   line-height: 1.2em;
 }
-
 .local h3 {
   font-size: 1.3em;
   margin-bottom: 15px;
@@ -225,7 +220,6 @@ header nav img {
 }
 
 @media screen and (min-width: 1200px) {
-  /*INDEX*/
   .seccion-medio {
     background-color: #fcfafa;
     border-radius: 15px;
@@ -234,6 +228,7 @@ header nav img {
     font-size: 45px;
     margin-top: 10px;
   }
+  /*INDEX*/
   .box-img {
     width: 250px;
     height: 250px;
