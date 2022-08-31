@@ -152,7 +152,7 @@
 
 @media screen and (min-width: 1200px) {
     .seccion-medio {
-        background-color: #fcfafa;
+        background-color: map-get($estilos, colorMedio);
         border-radius: 15px;
 
         h1 {
@@ -175,7 +175,7 @@
     }
 
     .box-productos {
-        background-color: #fcfafa;
+        background-color: map-get($estilos, colorMedio);
     }
 
     /* GALERIA */
@@ -209,11 +209,11 @@
     .input-asunto {
         border: none;
         border-bottom: 2px solid rgb(168, 56, 56);
-        background-color: #fcfafa;
+        background-color: map-get($estilos, colorMedio);
     }
 
     .input-textArea {
-        background-color: #fcfafa;
+        background-color: map-get($estilos, colorMedio);
         height: 120px;
     }
 

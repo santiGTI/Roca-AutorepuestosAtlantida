@@ -1,7 +1,7 @@
 /* FOOTER */
 
 footer {
-    background-image: linear-gradient(to bottom, #29292c, #323338);
+    background-image: map-get($estilos, colorFooter);
     color: #fff;
     font-family: "Courier New", Courier, monospace;
 
@@ -33,7 +33,7 @@ footer {
         height: 30px;
 
         img {
-            width: 100%;
+            width: auto;
             height: 100%;
         }
     }

@@ -4,9 +4,21 @@
   padding: 0;
 }
 
+/* DESKTOP */
+@media screen and (min-width: 1200px) {
+  body {
+    background: url(https://fondosmil.com/fondo/13559.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  main {
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+}
 /* HEADER */
 header {
-  background-image: red;
+  background-image: linear-gradient(to bottom, #1a1a1c, #2a2c2e);
 }
 header nav li {
   font-family: "Jost", sans-serif;
@@ -38,18 +50,6 @@ header nav img {
   header nav ul li {
     border: 2px solid rgb(255, 255, 255);
     border-radius: 15px;
-  }
-}
-/* DESKTOP */
-@media screen and (min-width: 1200px) {
-  body {
-    background: url(https://fondosmil.com/fondo/13559.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-  }
-  main {
-    margin-left: 200px;
-    margin-right: 200px;
   }
 }
 .box-imgRotativa {
@@ -397,7 +397,7 @@ footer p {
 .box-redes .box-twitter img,
 .box-redes .box-instagram img,
 .box-redes .box-facebook img {
-  width: 100%;
+  width: auto;
   height: 100%;
 }
 
