@@ -16,8 +16,7 @@ footer {
 }
 
 .box-whatsapp {
-    width: 60px;
-    height: 60px;
+    @include tamaño($width: 60px, $height: 60px);
 
     img {
         height: 100%;
@@ -33,14 +32,12 @@ footer {
         height: 30px;
 
         img {
-            width: auto;
-            height: 100%;
+            @include tamaño($width: auto, $height: 100%);
         }
     }
 }
 
 @media screen and (min-width: 1200px) {
-
     .seccion-footer {
         width: 80%;
     }

@@ -1,8 +1,7 @@
-//SECCION INICIO
+//SECCION INICIO INDEX
 
-// INDEX
 .box-imgRotativa {
-    height: 230px;
+    height: 250px;
 
     img {
         height: 100%;
@@ -10,8 +9,13 @@
     }
 }
 
+@media screen and (min-width: 576px) {
+    .box-imgRotativa {
+        height: 330px;
+    }
+}
+
 @media screen and (min-width: 1200px) {
-    //INDEX
     .box-imgRotativa {
         height: 370px;
 
