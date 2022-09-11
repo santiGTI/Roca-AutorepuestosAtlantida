@@ -1,22 +1,46 @@
-/*SECCION MEDIO - INDEX*/
+//SECCION MEDIO
 
 .seccion-medio {
     background-color: #ffffff;
 
     h1 {
-        font-size: 32px;
+        font-size: 37px;
         font-family: "Jost", sans-serif;
-        padding: 25px 0px 15px 0px;
-        margin: 5px;
+        // padding: 25px 0px 15px 0px;
+        // margin: 5px;
     }
     p {
         text-align: justify;
     }
 }
 
-.fila {
-    width: 90%;
-    align-items: center;
+@media screen and (min-width: 768px) {
+    .seccion-medio {
+        background-color: map-get($estilos, colorMedio);
+        // background-color: red;
+
+        h1 {
+            font-size: 40px;
+            // margin-top: 5px;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .seccion-medio {
+        // background-color: map-get($estilos, colorMedio);
+        border-radius: 15px;
+
+        h1 {
+            font-size: 45px;
+            margin-top: 10px;
+        }
+    }
+}
+
+// SECCION MEDIO - INDEX
+.fila-index {
+    @include filaPropiedades(90%, true);
 }
 
 .box-img {
@@ -30,6 +54,12 @@
         &:hover {
             transform: scale(1.05, 1.05);
         }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .box-img {
+        @include tamaño($width: 250px, $height: 250px);
     }
 }
 
@@ -50,7 +80,7 @@
 }
 
 .fila-productos {
-    align-items: stretch;
+    @include filaPropiedades(90%, false);
 }
 
 .alta img {
@@ -145,22 +175,6 @@
 
 //DESKTOP
 @media screen and (min-width: 1200px) {
-    .seccion-medio {
-        background-color: map-get($estilos, colorMedio);
-        border-radius: 15px;
-
-        h1 {
-            font-size: 45px;
-            margin-top: 10px;
-        }
-    }
-
-    /*INDEX*/
-
-    .box-img {
-        @include tamaño($width: 250px, $height: 250px);
-    }
-
     /* PRODUCTOS*/
 
     .alta img {
@@ -194,7 +208,7 @@
     /* CONTACTO*/
 
     .fila-contacto {
-        width: 90%;
+        @include filaPropiedades(90%, false);
     }
 
     .input-nombre,

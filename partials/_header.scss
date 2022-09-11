@@ -24,8 +24,8 @@ header {
         animation: logoInicio 3s ease 0s 1 normal forwards;
     }
 
-    .fila {
-        width: 100%;
+    .fila-header {
+        @include filaPropiedades(100%, true);
         justify-content: center;
     }
 }

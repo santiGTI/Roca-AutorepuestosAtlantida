@@ -48,8 +48,9 @@ header img {
   -webkit-animation: logoInicio 3s ease 0s 1 normal forwards;
           animation: logoInicio 3s ease 0s 1 normal forwards;
 }
-header .fila {
+header .fila-header {
   width: 100%;
+  align-items: center;
   justify-content: center;
 }
 
@@ -99,21 +100,35 @@ header .fila {
     border-radius: 20px;
   }
 }
-/*SECCION MEDIO - INDEX*/
 .seccion-medio {
   background-color: #ffffff;
 }
 .seccion-medio h1 {
-  font-size: 32px;
+  font-size: 37px;
   font-family: "Jost", sans-serif;
-  padding: 25px 0px 15px 0px;
-  margin: 5px;
 }
 .seccion-medio p {
   text-align: justify;
 }
 
-.fila {
+@media screen and (min-width: 768px) {
+  .seccion-medio {
+    background-color: #fcfafa;
+  }
+  .seccion-medio h1 {
+    font-size: 40px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .seccion-medio {
+    border-radius: 15px;
+  }
+  .seccion-medio h1 {
+    font-size: 45px;
+    margin-top: 10px;
+  }
+}
+.fila-index {
   width: 90%;
   align-items: center;
 }
@@ -130,6 +145,12 @@ header .fila {
   transform: scale(1.05, 1.05);
 }
 
+@media screen and (min-width: 1200px) {
+  .box-img {
+    width: 250px;
+    height: 250px;
+  }
+}
 /* SECCION MEDIO - PRODUCTOS */
 .box-productos {
   height: 200px;
@@ -143,7 +164,7 @@ header .fila {
 }
 
 .fila-productos {
-  align-items: stretch;
+  width: 90%;
 }
 
 .alta img {
@@ -242,19 +263,6 @@ header .fila {
 }
 
 @media screen and (min-width: 1200px) {
-  .seccion-medio {
-    background-color: #fcfafa;
-    border-radius: 15px;
-  }
-  .seccion-medio h1 {
-    font-size: 45px;
-    margin-top: 10px;
-  }
-  /*INDEX*/
-  .box-img {
-    width: 250px;
-    height: 250px;
-  }
   /* PRODUCTOS*/
   .alta img {
     height: 400px;
