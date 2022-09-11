@@ -104,7 +104,7 @@ header .fila-header {
   background-color: #ffffff;
 }
 .seccion-medio h1 {
-  font-size: 37px;
+  font-size: 33px;
   font-family: "Jost", sans-serif;
 }
 .seccion-medio p {
@@ -171,8 +171,20 @@ header .fila-header {
   height: 200px;
 }
 
+@media screen and (min-width: 1200px) {
+  .alta img {
+    height: 400px;
+  }
+  .box-productos {
+    background-color: #fcfafa;
+  }
+}
 /* SECCION MEDIO - GALERIA*/
-.fila iframe {
+.fila-galeria {
+  width: 90%;
+  align-items: center;
+}
+.fila-galeria iframe {
   width: 100%;
   height: 250px;
 }
@@ -181,13 +193,34 @@ header .fila-header {
   height: 200px;
 }
 
+@media screen and (min-width: 1200px) {
+  .box-card img {
+    height: 250px;
+  }
+  .fila-galeria iframe {
+    height: 370px;
+  }
+}
 /*SECCION MEDIO - MARCAS*/
+.fila-marcas {
+  width: 90%;
+  align-items: center;
+}
+
 .box-marcas img {
   height: 220px;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
+@media screen and (min-width: 1200px) {
+  .box-marcas {
+    height: 400px;
+  }
+  .box-marcas img {
+    height: 100%;
+  }
+}
 /*SECCION MEDIO - CONTACTO*/
 .form-contacto p {
   font-size: 0.8em;
@@ -215,6 +248,13 @@ header .fila-header {
   outline: none;
   width: 100%;
 }
+.input-nombre:focus,
+.input-correo:focus,
+.input-asunto:focus,
+.input-textArea:focus {
+  border: none;
+  border-bottom: 2px solid rgb(168, 56, 56);
+}
 
 .input-asunto,
 .input-textArea {
@@ -224,14 +264,6 @@ header .fila-header {
 .input-textArea {
   border-style: dotted;
   resize: none;
-}
-
-.input-textArea:focus,
-.input-nombre:focus,
-.input-correo:focus,
-.input-asunto:focus {
-  border: none;
-  border-bottom: 2px solid rgb(168, 56, 56);
 }
 
 .boton {
@@ -263,30 +295,11 @@ header .fila-header {
 }
 
 @media screen and (min-width: 1200px) {
-  /* PRODUCTOS*/
-  .alta img {
-    height: 400px;
-  }
-  .box-productos {
-    background-color: #fcfafa;
-  }
-  /* GALERIA */
-  .box-card img {
-    height: 250px;
-  }
-  .fila iframe {
-    height: 370px;
-  }
-  /* MARCAS*/
-  .box-marcas {
-    height: 400px;
-  }
-  .box-marcas img {
-    height: 100%;
-  }
-  /* CONTACTO*/
   .fila-contacto {
     width: 90%;
+  }
+  .fila-contacto iframe {
+    height: 380px;
   }
   .input-nombre,
 .input-correo,
@@ -306,14 +319,11 @@ header .fila-header {
     font-weight: 600;
     font-size: 13px;
   }
-  .local p {
-    font-size: 0.9em;
-  }
-  .fila-contacto iframe {
-    height: 380px;
-  }
   .local {
     background-image: none;
+  }
+  .local p {
+    font-size: 0.9em;
   }
 }
 /* ANIMACION LOGO */
