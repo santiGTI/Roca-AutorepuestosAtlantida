@@ -6,7 +6,7 @@ footer {
     font-family: "Courier New", Courier, monospace;
 
     h5 {
-        font-size: 20px;
+        font-size: 1.3rem;
         font-weight: bold;
     }
 
@@ -24,7 +24,7 @@ footer {
 }
 
 .box-redes {
-    width: 40%;
+    width: 50%;
 
     .box-twitter,
     .box-instagram,
@@ -32,10 +32,23 @@ footer {
         height: 30px;
 
         img {
-            @include tamaño($width: auto, $height: 100%);
+            @extend %imagenContain;
         }
     }
 }
+
+@media screen and (min-width: 575px){
+    .box-redes{
+        width: 30%;
+    }
+}
+
+@media screen and (min-width: 767px){
+    .box-redes{
+        width: 60%;
+    }
+}
+
 
 @media screen and (min-width: 1200px) {
     .seccion-footer {
